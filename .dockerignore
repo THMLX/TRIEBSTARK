@@ -1,0 +1,6 @@
+# Only send the files required to build the published static website.
+**
+!Dockerfile
+!nginx.conf
+!public/
+!public/**

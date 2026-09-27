@@ -1,4 +1,8 @@
 FROM nginx:stable-alpine
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY index.html /usr/share/nginx/html/index.html
+COPY public/ /usr/share/nginx/html/
+
+RUN nginx -t
+
+EXPOSE 8080
