@@ -1,6 +1,6 @@
 # TRIEBSTARK
 
-The personal website of **THMLX**, live at [triebstark.com](https://triebstark.com).
+The personal website of **Thomalex**, live at [triebstark.com](https://triebstark.com).
 
 ## Website
 
