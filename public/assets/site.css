@@ -50,3 +50,8 @@ a.social-entry:hover,.social-copy:focus-within{background:var(--hover)}
 .hero-art figcaption{color:#fffdf7;z-index:1;text-shadow:0 1px 3px rgba(0,0,0,.6)}
 .art-sticker{z-index:2}
 @media(max-width:780px){.hero-art>img{object-position:50% 68%}}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.button-outline{border:1px solid var(--line);background:transparent;color:var(--ink)}
+.button-outline:hover{background:var(--hover)}
+.navigation a[aria-current="page"]{color:var(--accent-text)}

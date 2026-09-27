@@ -5,6 +5,8 @@ The personal website of **THMLX**, live at [triebstark.com](https://triebstark.c
 ## Website
 
 - `public/index.html`: homepage, introduction, project, notes, social profiles, and copyable handles.
+- `public/gaming/index.html`: dedicated WoW Classic & Forever PvP page, personalized help, and Discord contact.
+- `public/assets/gaming.css` and `wow-character.png`: gaming page styles and owner-supplied character image.
 - `public/notes/a-place-to-start/index.html`: the first personal note.
 - `public/colophon/index.html`: site information, artwork credit, and privacy explanation.
 - `public/404.html`: custom page-not-found response.
