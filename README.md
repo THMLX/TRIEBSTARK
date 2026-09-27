@@ -10,7 +10,7 @@ The personal website of **THMLX**, live at [triebstark.com](https://triebstark.c
 - `public/404.html`: custom page-not-found response.
 - `public/assets/site.css` and `site.js`: responsive light/dark themes, theme toggle, and menu/copy-link interactions.
 - `public/assets/theme.js`: applies the saved theme before the first paint.
-- `public/assets/orbit.png`: original AI-generated ribbon artwork created for this site.
+- `public/assets/orbit.png`: AI-enhanced gym image based on the owner-supplied photograph (1086 × 1448 pixels).
 - `public/robots.txt` and `sitemap.xml`: search-engine discovery.
 
 Dark mode is the default, regardless of device preference. The header sun/moon button switches themes on every page, including the 404 page. The choice is remembered in browser local storage (`triebstark-theme`), synchronized across open tabs, and falls back gracefully when storage is blocked. Without JavaScript, the site remains usable in dark mode.

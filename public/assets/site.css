@@ -42,3 +42,11 @@ a.social-entry:hover,.social-copy:focus-within{background:var(--hover)}
 .socials-footnote{max-width:650px;margin-top:25px;font-size:11px;color:var(--muted);line-height:1.9}
 @media(max-width:780px){.social-list{column-gap:24px}.social-entry{gap:12px;padding-inline:0}.social-platform{font-size:25px}.social-number{display:none}.social-action,.social-copy-button{gap:8px}}
 @media(max-width:600px){.social-list{grid-template-columns:1fr}.social-entry{padding:20px 6px;min-height:98px;gap:17px}.social-number{display:block}.social-platform{font-size:27px}.social-action,.social-copy-button{gap:12px}.socials-footnote{font-size:11px}}
+
+/* Keep the chalked hand in frame and the caption legible over the gym photograph. */
+.hero-art{background:#1c201c}
+.hero-art>img{object-position:50% 62%}
+.hero-art:after{content:'';position:absolute;inset:70% 0 0;background:linear-gradient(transparent,rgba(10,14,11,.76));pointer-events:none}
+.hero-art figcaption{color:#fffdf7;z-index:1;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.art-sticker{z-index:2}
+@media(max-width:780px){.hero-art>img{object-position:50% 68%}}
