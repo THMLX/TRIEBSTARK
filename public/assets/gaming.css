@@ -65,3 +65,17 @@
 @media(max-width:1100px){.class-grid{gap:0 30px}.class-grid article{grid-template-columns:1fr;gap:16px}}
 @media(max-width:780px){.playstyle-copy{font-size:15px}.class-grid{gap:0 24px}.class-grid h3{font-size:32px}.pvp-formats{justify-content:flex-start;font-size:10px;gap:14px 25px}}
 @media(max-width:460px){.class-grid{grid-template-columns:1fr}.class-grid article{grid-template-columns:115px 1fr;gap:18px;padding-block:24px}.class-grid h3{font-size:30px}.class-grid .gaming-index{font-size:9px}.class-grid p{font-size:14px}.gaming-meta div:last-child{flex-basis:auto}}
+
+/* Preserve each original character and its complete weapon silhouette. */
+.character-archive{border-top:1px solid var(--line)}
+.character-archive-grid{display:grid;grid-template-columns:.9fr 1.3fr;gap:28px}
+.archive-card{min-width:0;border:1px solid var(--line);background:var(--surface)}
+.archive-image{display:flex;align-items:center;justify-content:center;background:#212124;height:clamp(340px,32vw,440px);padding:20px;overflow:hidden}
+.archive-image img{display:block;width:100%;height:100%;object-fit:contain}
+.archive-card figcaption{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 25px;border-top:1px solid var(--line)}
+.archive-card h3{font-family:var(--serif);font-size:32px;font-weight:400;letter-spacing:-.7px;line-height:1.2;margin-top:8px}
+.archive-card figcaption a{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:44px;font-size:12px;white-space:nowrap;text-decoration:underline;text-underline-offset:5px}
+.archive-card figcaption a:hover{color:var(--accent-text)}
+@media(max-width:1100px){.character-archive-grid{gap:22px;grid-template-columns:1fr 1.2fr}.archive-card figcaption{padding:20px;gap:12px}.archive-card h3{font-size:29px}.archive-card .gaming-index{font-size:10px}}
+@media(max-width:780px){.character-archive-grid{grid-template-columns:1fr;gap:28px}.archive-image{height:auto;padding:18px}.archive-image img{width:auto;height:auto;max-width:100%;max-height:480px}.archive-card figcaption{padding:20px 22px}.archive-card h3{font-size:32px}}
+@media(max-width:380px){.archive-card figcaption{padding:18px 16px;gap:10px}.archive-card figcaption a{font-size:11px;gap:7px}.archive-card h3{font-size:28px}.archive-card .gaming-index{font-size:9px}}
