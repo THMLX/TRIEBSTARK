@@ -129,6 +129,8 @@
   "All socials": "Alle sosiale medier",
   "About this site": "Om nettsiden",
   "Back to top ↑": "Til toppen ↑",
+  "My Classic Druid, in green and gold armor with a long staff": "Min Druid fra Classic, i grønn og gullfarget rustning med en lang stav",
+  "View Druid full size (opens in a new tab)": "Se Druid i full størrelse (åpnes i en ny fane)",
   "Strength & Bodybuilding — Thomalex / TRIEBSTARK": "Styrketrening og bodybuilding — Thomalex / TRIEBSTARK",
   "Thomalex on lifting weights, bodybuilding, and the training behind it. Explore a session from my log and follow me on Hevy.": "Thomalex om styrketrening, bodybuilding og arbeidet bak. Se en økt fra treningsloggen min, og følg meg på Hevy.",
   "Strength & Bodybuilding — Thomalex": "Styrketrening og bodybuilding — Thomalex",
