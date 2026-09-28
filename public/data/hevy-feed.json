@@ -1,6 +1,1171 @@
 {
   "schemaVersion": 1,
-  "updatedAt": null,
-  "workouts": [],
-  "measurements": []
+  "workouts": [
+    {
+      "id": "1B4BB194-C54B-42BD-A456-A429BB0804C4",
+      "title": "Push 1",
+      "startTime": "2026-09-05T02:56:42Z",
+      "durationMinutes": 55.4,
+      "exercises": [
+        {
+          "title": "Bench Press (Barbell)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 40,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "warmup",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 70,
+              "reps": 5,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 50,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 50,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 10
+            }
+          ]
+        },
+        {
+          "title": "Incline Bench Press (Dumbbell)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9
+            },
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            }
+          ]
+        },
+        {
+          "title": "Rear Delt Reverse Fly (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 10
+            }
+          ]
+        },
+        {
+          "title": "Preacher Curl (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 15,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            }
+          ]
+        },
+        {
+          "title": "Overhead Triceps Extension (Cable)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9
+            }
+          ]
+        },
+        {
+          "title": "Triceps Rope Pushdown",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 10
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "42a11f56-7da7-4b24-b8d2-6632b31710c1",
+      "title": "Pull 2",
+      "startTime": "2026-09-02T21:48:12Z",
+      "durationMinutes": 79.9,
+      "exercises": [
+        {
+          "title": "Treadmill",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 0,
+              "reps": 0,
+              "distanceMeters": 1200,
+              "durationSeconds": 1200
+            }
+          ]
+        },
+        {
+          "title": "Lat Pulldown (Machine)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 20,
+              "reps": 14,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "warmup",
+              "weightKg": 50,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 70,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weightKg": 70,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 70,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weightKg": 70,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "title": "Landmine Row",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 10,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            }
+          ]
+        },
+        {
+          "title": "Shrug (Dumbbell)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 14,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "title": "Bicep Curl (Cable)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            }
+          ]
+        },
+        {
+          "title": "Seated Palms Up Wrist Curl",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 10,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 15,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 10,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e122a32e-7806-4193-9d38-1f8411ca0034",
+      "title": "Push 2",
+      "startTime": "2026-08-26T05:15:27Z",
+      "durationMinutes": 58.3,
+      "exercises": [
+        {
+          "title": "Shoulder Press (Dumbbell)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 25,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "warmup",
+              "weightKg": 25,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 10,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 35,
+              "reps": 8,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9.5
+            }
+          ]
+        },
+        {
+          "title": "Chest Press (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 10,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 15,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 10
+            }
+          ]
+        },
+        {
+          "title": "Triceps Extension (Dumbbell)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 12.5,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 7.5,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 10,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            }
+          ]
+        },
+        {
+          "title": "Rear Delt Reverse Fly (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9
+            }
+          ]
+        },
+        {
+          "title": "Chest Fly (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9.5
+            }
+          ]
+        },
+        {
+          "title": "Hanging Knee Raise",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 0,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 0,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 0,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a432c00c-2682-4955-9e5e-6de344add4f9",
+      "title": "Legs 1",
+      "startTime": "2026-08-24T03:18:30Z",
+      "durationMinutes": 82.1,
+      "exercises": [
+        {
+          "title": "Treadmill",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 0,
+              "reps": 0,
+              "distanceMeters": 500,
+              "durationSeconds": 600
+            }
+          ]
+        },
+        {
+          "title": "Squat (Barbell)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "warmup",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 50,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 50,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8
+            }
+          ]
+        },
+        {
+          "title": "Romanian Deadlift (Barbell)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            }
+          ]
+        },
+        {
+          "title": "Hip Adduction (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 35,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9
+            }
+          ]
+        },
+        {
+          "title": "Leg Extension (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 8.5
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 9
+            }
+          ]
+        },
+        {
+          "title": "Seated Calf Raise",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "title": "Dead Hang",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 0,
+              "reps": 0,
+              "distanceMeters": 0,
+              "durationSeconds": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d77b23bd-44e2-43fb-beb7-8b5196cef092",
+      "title": "Pull 1",
+      "startTime": "2026-08-14T04:08:00Z",
+      "durationMinutes": 87.7,
+      "exercises": [
+        {
+          "title": "Bent Over Row (Barbell)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 15,
+              "reps": 15
+            },
+            {
+              "type": "warmup",
+              "weightKg": 17.5,
+              "reps": 18
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weightKg": 35,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weightKg": 45,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "title": "Lat Pulldown (Cable)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "title": "Lat Pulldown - Close Grip (Cable)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 50,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weightKg": 50,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weightKg": 55,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "title": "Triceps Rope Pushdown",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "title": "Preacher Curl (Machine)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weightKg": 15,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "title": "Hammer Curl (Dumbbell)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 16,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weightKg": 12,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weightKg": 12,
+              "reps": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a7fe5898-04cd-4c90-a55d-6dcc95883223",
+      "title": "Push 1",
+      "startTime": "2026-08-11T07:19:08Z",
+      "durationMinutes": 81.0,
+      "exercises": [
+        {
+          "title": "Treadmill",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 0,
+              "reps": 0,
+              "distanceMeters": 0,
+              "durationSeconds": 600
+            }
+          ]
+        },
+        {
+          "title": "Bench Press (Barbell)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "warmup",
+              "weightKg": 30,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 40,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 45,
+              "reps": 8,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 45,
+              "reps": 10,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            }
+          ]
+        },
+        {
+          "title": "Incline Bench Press (Dumbbell)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 10,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 15,
+              "reps": 8,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 12.5,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            }
+          ]
+        },
+        {
+          "title": "Lateral Raise (Dumbbell)",
+          "sets": [
+            {
+              "type": "warmup",
+              "weightKg": 5,
+              "reps": 8,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 3,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 2,
+              "reps": 20,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 3,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            }
+          ]
+        },
+        {
+          "title": "Bicep Curl (Dumbbell)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 10,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 7.5,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 7.5,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            }
+          ]
+        },
+        {
+          "title": "Triceps Pushdown",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 25,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 30,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 35,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            }
+          ]
+        },
+        {
+          "title": "Overhead Triceps Extension (Cable)",
+          "sets": [
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 20,
+              "reps": 12,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            },
+            {
+              "type": "normal",
+              "weightKg": 15,
+              "reps": 15,
+              "distanceMeters": 0,
+              "durationSeconds": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "date": "2026-09-03",
+      "values": {
+        "weight_kg": 85.6
+      }
+    },
+    {
+      "date": "2026-08-26",
+      "values": {
+        "weight_kg": 89
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "values": {
+        "weight_kg": 86.3
+      }
+    },
+    {
+      "date": "2026-08-11",
+      "values": {
+        "weight_kg": 84.6
+      }
+    },
+    {
+      "date": "2026-08-05",
+      "values": {
+        "weight_kg": 82.5
+      }
+    },
+    {
+      "date": "2025-11-28",
+      "values": {
+        "weight_kg": 72
+      }
+    },
+    {
+      "date": "2024-11-28",
+      "values": {
+        "weight_kg": 69
+      }
+    }
+  ],
+  "updatedAt": "2026-09-28T12:21:14Z"
 }
