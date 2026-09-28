@@ -55,6 +55,14 @@ Edit the HTML files directly. Keep the shared header/footer consistent across pa
 
 Assets cache for one hour. Increment the versioned CSS/JS URL suffix in each HTML file after changes, or give changed assets a new filename. HTML is revalidated on each request.
 
+## Languages
+
+The compact EN/NO button beside the theme control switches every page between English (the default) and Norwegian Bokmål. The visitor's choice is stored locally under `triebstark-language` (`en` or `nb`) and follows navigation, refreshes, and other open tabs. It is not sent to a translation service. Without JavaScript, the original English HTML remains usable.
+
+`public/assets/language.js` contains the Bokmål dictionary and shared language runtime. Dictionary keys match original English text with surrounding whitespace removed and internal whitespace collapsed. When adding or changing site copy, update the dictionary too, including titles, descriptions and accessibility labels. The runtime preserves markup and restores the original English text when switching back. Game class names, usernames and names of products remain unchanged.
+
+Dynamic controls use `window.siteI18n.t(template, variables)` and rerender on `site:languagechange`; localized regions are marked `data-i18n-dynamic` so the static translator leaves them alone. `training.js` formats Hevy dates and numbers for `en-GB` or `nb-NO`, while workout titles and exercise names stay exactly as logged. Keep these rules when adding new dynamic content.
+
 The website itself has no analytics, tracking cookies, account system, external fonts, or message-submission form. Social handles and profile links are supplied by the owner. Spotify, BattleTag, and Discord display copyable usernames; Spotify needs a full profile URL before a direct link can be added. Add an email or contact service only after its details are supplied and verified.
 
 ## Training page

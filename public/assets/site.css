@@ -59,3 +59,24 @@ a.social-entry:hover,.social-copy:focus-within{background:var(--hover)}
 /* Give the shared navigation room for both personal subpages. */
 @media(min-width:781px){.navigation{gap:24px}.nav-external{margin-left:12px}}
 @media(min-width:781px) and (max-width:1100px){.navigation{gap:16px}.nav-external{margin-left:0}}
+
+/* Compact, persistent language choice next to the theme control. */
+.language-toggle{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;min-width:44px;min-height:44px;padding:10px 8px;border:1px solid var(--line);border-radius:24px;background:transparent;font-size:11px;line-height:1;font-weight:600;letter-spacing:.04em}
+.language-toggle[hidden]{display:none}.language-toggle:hover{background:var(--hover)}
+.site-header{column-gap:14px}.site-header .theme-toggle{margin-left:4px}.site-header .wordmark{flex-shrink:0}
+@media(max-width:1100px){.site-header .theme-label{display:none}}
+@media(max-width:960px){
+  .site-header{height:83px;position:relative;z-index:5;gap:10px}
+  .site-header .theme-toggle{margin-left:auto}
+  .site-header .menu-toggle{display:none;gap:8px;align-items:center;background:none;border:0;padding:10px 0 10px 4px;font-size:12px;min-width:44px;min-height:44px}
+  .js .site-header .menu-toggle{display:flex}.site-header .menu-toggle>span{font-size:24px;line-height:1}
+  .site-header .navigation{display:none;position:absolute;top:82px;left:0;right:0;margin:0;padding:22px 25px;background:var(--paper);box-shadow:0 12px 16px #25272014;border-bottom:1px solid var(--line)}
+  .site-header .navigation.is-open{display:flex;align-items:stretch;flex-direction:column;gap:6px}
+  .site-header .navigation a{padding-block:12px;font-size:16px}.site-header .nav-external{margin-left:0;border-top:1px solid var(--line);margin-top:5px}
+  .site-header>.back-link{display:none}
+  html:not(.js) .site-header{height:auto;min-height:83px;flex-wrap:wrap;padding-block:22px}
+  html:not(.js) .site-header .navigation{display:flex;position:static;flex-wrap:wrap;flex-direction:row;box-shadow:none;padding:0;border:0;gap:14px}
+  html:not(.js) .site-header .navigation a{font-size:12px;padding:0}
+}
+@media(max-width:460px){.site-header{gap:7px}.site-header .theme-toggle,.language-toggle{min-width:40px;min-height:44px;padding:9px}.site-header .menu-toggle{font-size:0;min-width:30px;padding:9px 0;justify-content:center;gap:0}}
+@media(max-width:360px){.site-header .wordmark{font-size:17px;gap:5px}.site-header .brand-mark{font-size:23px;margin-right:0}.site-header{gap:5px}}
