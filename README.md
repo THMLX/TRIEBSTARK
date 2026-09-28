@@ -56,3 +56,14 @@ Edit the HTML files directly. Keep the shared header/footer consistent across pa
 Assets cache for one hour. Increment the versioned CSS/JS URL suffix in each HTML file after changes, or give changed assets a new filename. HTML is revalidated on each request.
 
 The website itself has no analytics, tracking cookies, account system, external fonts, or message-submission form. Social handles and profile links are supplied by the owner. Spotify, BattleTag, and Discord display copyable usernames; Spotify needs a full profile URL before a direct link can be added. Add an email or contact service only after its details are supplied and verified.
+
+## Training page
+
+- `public/training/index.html`: Strength & Bodybuilding page, licensed archival photo, verified public Hevy session, profile links, and prepared referral button.
+- `public/assets/training.css` and `training.js`: page styling and referral-button activation.
+- `public/data/training-config.json`: set `hevyReferralUrl` to the exact HTTPS referral URL supplied by the owner. This is the only value needed to activate the button and disclosure. Until then it stays visibly disabled and labelled coming soon. Never substitute the ordinary profile URL. Config is fetched without caching. Never put API credentials in this file.
+- `public/assets/arnold-training-1975.jpg`: 1280 x 855 Wikimedia thumbnail of Harry Chase / Los Angeles Times, UCLA Library's 1975 Pumping Iron photo, CC BY 4.0. Source and license are credited on the page and in the colophon. Resized by Wikimedia; no other edits.
+
+The featured workout is an explicitly dated snapshot of the public session at https://hevy.com/workout/0F5MTHOtRm4, verified 2026-09-28. It is not an automatic feed. It shows Push 1, 2026-09-05, 55 minutes, 7,310 kg logged volume, six exercises; the bench count includes two warm-ups. Profile links always lead to the current activity at https://hevy.com/user/thomalex.
+
+Automatic workout and measurement synchronization is implemented in scripts/sync_hevy.py and .github/workflows/sync-hevy.yml, with data served from public/data/hevy-feed.json. It checks every 30 minutes once the HEVY_API_KEY repository secret is added. Until connected, the dated public session remains as the fallback. See HEVY-SETUP.md for the exact connection steps, publication scope, referral configuration, and API photo limitation. The API key is never served to visitors.

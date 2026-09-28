@@ -1,0 +1,50 @@
+name: Sync Hevy training log
+
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: hevy-public-feed
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the publishing branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+
+      - name: Verify the feed exporter
+        run: python3 -m unittest discover -s scripts -p 'test_sync_hevy.py' -v
+
+      - name: Refresh the public snapshot
+        env:
+          HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
+        run: python3 scripts/sync_hevy.py
+
+      - name: Publish changed training data
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -f public/data/hevy-feed.json ]; then
+            exit 0
+          fi
+          git add -- public/data/hevy-feed.json
+          if git diff --cached --quiet; then
+            echo "No feed change to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update Hevy training log"
+          git pull --rebase origin main
+          git push origin HEAD:main
