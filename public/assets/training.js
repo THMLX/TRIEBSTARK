@@ -42,9 +42,9 @@
       const setText = exercise.sets.map(set => {
         const parts = [];
         if (Number.isFinite(set.weightKg)) parts.push(`${number(set.weightKg)} kg`);
-        if (Number.isFinite(set.reps)) parts.push(`${number(set.reps)} reps`);
-        if (Number.isFinite(set.distanceMeters)) parts.push(`${number(set.distanceMeters)} m`);
-        if (Number.isFinite(set.durationSeconds)) parts.push(`${number(set.durationSeconds)} sec`);
+        if (Number.isFinite(set.reps) && set.reps > 0) parts.push(`${number(set.reps)} reps`);
+        if (Number.isFinite(set.distanceMeters) && set.distanceMeters > 0) parts.push(`${number(set.distanceMeters)} m`);
+        if (Number.isFinite(set.durationSeconds) && set.durationSeconds > 0) parts.push(`${number(set.durationSeconds)} sec`);
         return `${set.type === 'warmup' ? 'Warm-up: ' : ''}${parts.join(' × ') || 'Set logged'}`;
       }).join(' · ');
       text.append(node('small', setText, 'session-set-detail'));
