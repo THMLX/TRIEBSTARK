@@ -29,7 +29,10 @@
 .social-list>li{min-width:0}
 .social-entry{display:flex;align-items:center;gap:20px;padding:24px 8px;border-top:1px solid var(--line);min-height:112px;transition:background .2s}
 a.social-entry:hover,.social-copy:focus-within{background:var(--hover)}
-.social-number{align-self:flex-start;padding-top:4px;min-width:19px;color:var(--accent-text);font-family:var(--serif);font-size:12px;font-style:italic}
+.social-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex:0 0 44px;border:1px solid #d6d6cd;border-radius:12px;background:#fffdf7;transition:transform .2s,box-shadow .2s}
+.social-icon img{width:26px;height:26px;object-fit:contain;border-radius:5px}
+a.social-entry:hover .social-icon,a.social-icon:hover{transform:translateY(-2px);box-shadow:0 3px 10px #00000012}
+a.social-icon:focus-visible{outline-offset:3px}
 .social-identity{display:flex;flex-direction:column;min-width:0;gap:5px}
 .social-platform{font-family:var(--serif);font-size:28px;line-height:1.1;letter-spacing:-.7px}
 .social-handle{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
@@ -40,8 +43,9 @@ a.social-entry:hover,.social-copy:focus-within{background:var(--hover)}
 .social-copy-button:hover{background:var(--hover)}
 .social-copy-button svg{width:16px;height:16px}
 .socials-footnote{max-width:650px;margin-top:25px;font-size:11px;color:var(--muted);line-height:1.9}
-@media(max-width:780px){.social-list{column-gap:24px}.social-entry{gap:12px;padding-inline:0}.social-platform{font-size:25px}.social-number{display:none}.social-action,.social-copy-button{gap:8px}}
-@media(max-width:600px){.social-list{grid-template-columns:1fr}.social-entry{padding:20px 6px;min-height:98px;gap:17px}.social-number{display:block}.social-platform{font-size:27px}.social-action,.social-copy-button{gap:12px}.socials-footnote{font-size:11px}}
+@media(max-width:900px){.social-list{grid-template-columns:1fr}.social-entry{gap:16px;padding-inline:6px}}
+@media(max-width:600px){.social-entry{padding-block:20px;min-height:98px;gap:12px}.social-platform{font-size:27px}.social-action,.social-copy-button{gap:8px}.socials-footnote{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.social-icon{transition:none}a.social-entry:hover .social-icon,a.social-icon:hover{transform:none}}
 
 /* Keep the chalked hand in frame and the caption legible over the gym photograph. */
 .hero-art{background:#1c201c}

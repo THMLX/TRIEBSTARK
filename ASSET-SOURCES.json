@@ -1,0 +1,169 @@
+[
+  {
+    "file": "twitch.png",
+    "page": "https://www.twitch.tv/",
+    "source": "https://assets.twitch.tv/assets/favicon-32-e29e246c157142c94346.png",
+    "format": "PNG",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "bytes": 382,
+    "sha256": "4d87b8e63982e6f22b71048d310922e0c23858d3df0f7f3f0b362e7db7b25abb",
+    "retrievedAt": "2026-10-01T11:18:27.460122+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "snapchat.png",
+    "page": "https://www.snapchat.com/",
+    "source": "https://static.snapchat.com/images/favicon/favicon-192x192.png",
+    "format": "PNG",
+    "width": 192,
+    "height": 192,
+    "mode": "RGBA",
+    "bytes": 4318,
+    "sha256": "0d5c44c46aa3ddb82cb6384d1661070adf752a4ebb3eec3eb911b8eed0875637",
+    "retrievedAt": "2026-10-01T11:18:27.459109+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "youtube.png",
+    "page": "https://www.youtube.com/",
+    "source": "https://www.youtube.com/s/desktop/e6aecce7/img/favicon_96x96.png",
+    "format": "PNG",
+    "width": 96,
+    "height": 96,
+    "mode": "RGBA",
+    "bytes": 4249,
+    "sha256": "0b7cb6a8dab37a640f7e3c52d1ce4840886ef43a3047d9b0936e3b6f86e2effd",
+    "retrievedAt": "2026-10-01T11:18:27.460122+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "spotify.png",
+    "page": "https://open.spotify.com/",
+    "source": "https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png",
+    "format": "PNG",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "bytes": 1129,
+    "sha256": "b64ecc030dcc47688f94d6c4b14d747f2b8dbcdc7012e5c69574f8354eac7257",
+    "retrievedAt": "2026-10-01T11:18:27.460628+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "instagram.webp",
+    "page": "https://www.instagram.com/",
+    "source": "https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp",
+    "format": "WEBP",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "bytes": 900,
+    "sha256": "5ea73220ab5bda046e21d3f0cba26eafadeb3cc2bbd07a91978774048c84b6ee",
+    "retrievedAt": "2026-10-01T11:18:27.759969+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "battlenet.png",
+    "page": "https://account.battle.net/",
+    "source": "https://bnetaccount.akamaized.net/static/images/favicon-96x96.png",
+    "format": "PNG",
+    "width": 96,
+    "height": 96,
+    "mode": "RGBA",
+    "bytes": 3570,
+    "sha256": "7d2b7224cbf1f5b0d3a07f5ed708cbbb9559b8a787ab8430bca668eb67b28db7",
+    "retrievedAt": "2026-10-01T11:18:27.461174+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "discord.png",
+    "page": "https://discord.com/",
+    "source": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/62fddf0fde45a8baedcc7ee5_847541504914fd33810e70a0ea73177e%20(2)-1.png",
+    "format": "PNG",
+    "width": 32,
+    "height": 32,
+    "mode": "P",
+    "bytes": 557,
+    "sha256": "11848b5f1c8a7f294c6211c2f0d0dc83a8a28bfe1ef0829a8dacfdf475c5e5a2",
+    "retrievedAt": "2026-10-01T11:18:27.462694+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "vsco.png",
+    "page": "https://www.vsco.co/",
+    "source": "https://cdn.prod.website-files.com/64e27cdd42db7ecf119d5e61/6504a4ff6208cf39063fea10_Favicon-256.png",
+    "format": "PNG",
+    "width": 256,
+    "height": 256,
+    "mode": "P",
+    "bytes": 4174,
+    "sha256": "17ccbbb146590405b98a7ec3f00841709f84a26e6f2991560f4b5fac1ce44c90",
+    "retrievedAt": "2026-10-01T11:18:27.462694+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "reddit.png",
+    "page": "https://redditinc.com/",
+    "source": "https://redditinc.com/hubfs/Reddit_Favicon_FullColor_48x48.png",
+    "format": "PNG",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "bytes": 2617,
+    "sha256": "3a2e7c56ac46baa4d15b3f5666f834e3b31631e93cd900269145abb8895643b1",
+    "retrievedAt": "2026-10-01T11:18:27.462694+00:00",
+    "modified": false,
+    "icoSizes": null
+  },
+  {
+    "file": "onlyfans.ico",
+    "page": "https://onlyfans.com/",
+    "source": "https://onlyfans.com/favicon.ico",
+    "format": "ICO",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "bytes": 15086,
+    "sha256": "0a275730c8b9cdcb6259dd7f59b8c696b91f1d8a67056683b69ae82194c0a06d",
+    "retrievedAt": "2026-10-01T11:18:27.761502+00:00",
+    "modified": false,
+    "icoSizes": [
+      [
+        16,
+        16
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        48,
+        48
+      ]
+    ]
+  },
+  {
+    "file": "hevy.png",
+    "page": "https://www.hevyapp.com/",
+    "source": "https://www.hevyapp.com/wp-content/uploads/cropped-hevy-logo-192x192.png",
+    "format": "PNG",
+    "width": 192,
+    "height": 192,
+    "mode": "L",
+    "bytes": 3079,
+    "sha256": "c1d8bab194e3e8dc63270886961ca93943f060624c11758f644be5cb54b4a85e",
+    "retrievedAt": "2026-10-01T11:18:27.461174+00:00",
+    "modified": false,
+    "icoSizes": null
+  }
+]

@@ -63,7 +63,7 @@ The compact EN/NO button beside the theme control switches every page between En
 
 Dynamic controls use `window.siteI18n.t(template, variables)` and rerender on `site:languagechange`; localized regions are marked `data-i18n-dynamic` so the static translator leaves them alone. `training.js` formats Hevy dates and numbers for `en-GB` or `nb-NO`, while workout titles and exercise names stay exactly as logged. Keep these rules when adding new dynamic content.
 
-The website itself has no analytics, tracking cookies, account system, external fonts, or message-submission form. Social handles and profile links are supplied by the owner. Spotify, BattleTag, and Discord display copyable usernames; Spotify needs a full profile URL before a direct link can be added. Add an email or contact service only after its details are supplied and verified.
+The website itself has no analytics, tracking cookies, account system, external fonts, or message-submission form. Social handles and profile links are supplied by the owner. BattleTag and Discord display copyable usernames; Spotify links directly to the profile URL supplied by the owner. Add an email or contact service only after its details are supplied and verified.
 
 ## Training page
 
@@ -75,3 +75,7 @@ The website itself has no analytics, tracking cookies, account system, external 
 The featured workout is an explicitly dated snapshot of the public session at https://hevy.com/workout/0F5MTHOtRm4, verified 2026-09-28. It is not an automatic feed. It shows Push 1, 2026-09-05, 55 minutes, 7,310 kg logged volume, six exercises; the bench count includes two warm-ups. Profile links always lead to the current activity at https://hevy.com/user/thomalex.
 
 Automatic workout and measurement synchronization is implemented in scripts/sync_hevy.py and .github/workflows/sync-hevy.yml, with data served from public/data/hevy-feed.json. It checks every 30 minutes once the HEVY_API_KEY repository secret is added. Until connected, the dated public session remains as the fallback. See HEVY-SETUP.md for the exact connection steps, publication scope, referral configuration, and API photo limitation. The API key is never served to visitors.
+
+## Social icons
+
+The homepage uses locally hosted platform favicons in `public/assets/social/`. Profile rows open the supplied profile in a new tab, including when the icon is clicked. BattleTag and Discord keep their copy buttons; their icons open the corresponding platform because a direct profile URL has not been supplied. Spotify opens https://open.spotify.com/user/thomalex. Icon sources are recorded in `ASSET-SOURCES.json`. No third-party favicon service or runtime requests are needed.
