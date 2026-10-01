@@ -406,6 +406,7 @@
   "Icons open profiles or platforms in a new tab. For Spotify, BattleTag, and Discord, copy the name to find or add me.": "Ikonene åpner profiler eller plattformer i en ny fane. For Spotify, BattleTag og Discord kan du kopiere navnet for å finne eller legge meg til.",
   "Spotify: Thomalex (opens in a new tab)": "Spotify: Thomalex (åpnes i en ny fane)",
   "Icons open profiles or platforms in a new tab. For BattleTag and Discord, copy the name to find or add me.": "Ikonene åpner profiler eller plattformer i en ny fane. For BattleTag og Discord kan du kopiere navnet for å finne eller legge meg til.",
+  "Apple Music: Thomalex (opens in a new tab)": "Apple Music: Thomalex (åpnes i en ny fane)",
   "{label} username copied.": "Brukernavnet på {label} er kopiert.",
   "Site link copied.": "Lenken til nettsiden er kopiert.",
   "{label}: {value}": "{label}: {value}",

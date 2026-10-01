@@ -165,5 +165,19 @@
     "retrievedAt": "2026-10-01T11:18:27.461174+00:00",
     "modified": false,
     "icoSizes": null
+  },
+  {
+    "file": "apple-music.png",
+    "page": "https://music.apple.com/profile/thomalex",
+    "source": "https://music.apple.com/assets/favicon/favicon-32.png",
+    "format": "PNG",
+    "width": 32,
+    "height": 32,
+    "mode": "P",
+    "bytes": 617,
+    "sha256": "33bd3bcb52f311d7e21b096193bdc1019753683448597fdaaacb3f8b082b6f7c",
+    "retrievedAt": "2026-10-01T11:45:00.534317+00:00",
+    "modified": false,
+    "icoSizes": null
   }
 ]
