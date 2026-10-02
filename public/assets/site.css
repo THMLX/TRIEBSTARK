@@ -86,3 +86,11 @@ a.social-icon:focus-visible{outline-offset:3px}
 }
 @media(max-width:460px){.site-header{gap:7px}.site-header .theme-toggle,.language-toggle{min-width:40px;min-height:44px;padding:9px}.site-header .menu-toggle{font-size:0;min-width:30px;padding:9px 0;justify-content:center;gap:0}}
 @media(max-width:360px){.site-header .wordmark{font-size:17px;gap:5px}.site-header .brand-mark{font-size:23px;margin-right:0}.site-header{gap:5px}}
+
+/* Local vector icons keep controls consistent across browser fonts and themes. */
+.ui-icon{display:inline-block;width:1em;height:1em;vertical-align:-.14em;flex-shrink:0}
+.menu-icon{display:inline-flex;align-items:center}
+.menu-icon .ui-icon{width:18px;height:18px}
+.menu-icon .icon-close{display:none}
+.menu-toggle[aria-expanded="true"] .icon-menu{display:none}
+.menu-toggle[aria-expanded="true"] .icon-close{display:block}

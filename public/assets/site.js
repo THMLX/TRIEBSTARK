@@ -35,7 +35,6 @@
     if (!menuButton || !navigation) return;
     navigation.classList.remove('is-open');
     menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.querySelector('span').textContent = '＋';
     if (returnFocus) menuButton.focus();
   }
   if (menuButton && navigation) {
@@ -43,7 +42,6 @@
       const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
       navigation.classList.toggle('is-open', !isOpen);
       menuButton.setAttribute('aria-expanded', String(!isOpen));
-      menuButton.querySelector('span').textContent = isOpen ? '＋' : '−';
     });
     navigation.addEventListener('click', (event) => {
       if (event.target.closest('a')) closeMenu();

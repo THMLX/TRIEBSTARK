@@ -40,14 +40,22 @@
   const number = value => new Intl.NumberFormat(locale(), { maximumFractionDigits: 2 }).format(value);
   const date = value => new Intl.DateTimeFormat(locale(), { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(value.length === 10 ? value + 'T12:00:00Z' : value));
   const node = (tag, text, className) => { const element = document.createElement(tag); if (text !== undefined) element.textContent = text; if (className) element.className = className; return element; };
-  const profileLink = () => { const a = node('a', t('Open my training on Hevy ↗'), 'training-text-link'); a.href = 'https://hevy.com/user/thomalex'; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
+  const icon = id => {
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    for (const [name, value] of Object.entries({ class: 'ui-icon', viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', 'stroke-width': '1.7', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true', focusable: 'false' })) svg.setAttribute(name, value);
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttribute('href', '/assets/ui-icons.svg#' + id);
+    svg.append(use);
+    return svg;
+  };
+  const profileLink = () => { const a = node('a', t('Open my training on Hevy'), 'training-text-link'); a.append(' ', icon('arrow-up-right')); a.href = 'https://hevy.com/user/thomalex'; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
   const workoutKey = workout => String(workout.id || workout.startTime + '|' + workout.title);
   let currentFeed = null;
   let historyLimit = 7;
   function stat(label, value) { const div = node('div'); div.append(node('dt', label), node('dd', value)); return div; }
   function exercises(workout) {
     const details = node('details', undefined, 'workout-exercises'); details.dataset.workoutDetail = workoutKey(workout);
-    const summary = node('summary', t('Inside this session')); const mark = node('span', '＋'); mark.setAttribute('aria-hidden', 'true'); summary.append(mark); details.append(summary);
+    const summary = node('summary', t('Inside this session')); const mark = node('span'); mark.setAttribute('aria-hidden', 'true'); mark.append(icon('plus')); summary.append(mark); details.append(summary);
     const ul = node('ul');
     for (const exercise of workout.exercises) {
       const li = node('li'); const text = node('span', exercise.title);
