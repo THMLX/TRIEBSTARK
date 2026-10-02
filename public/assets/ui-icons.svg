@@ -8,5 +8,10 @@
   <symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
   <symbol id="x" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
   <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-  <symbol id="brand-t" viewBox="0 0 24 24"><path d="M4 4h16v4h-6v13h-4V8H4z"/></symbol>
+  <symbol id="brand-dumbbell" viewBox="0 0 24 24"><g transform="rotate(-35 12 12)">
+      <path d="M1.6 11h20.8v2H1.6z"/>
+      <path d="M1 10.2l.6-.6h.8l.6.6v3.6l-.6.6h-.8l-.6-.6zM21 10.2l.6-.6h.8l.6.6v3.6l-.6.6h-.8l-.6-.6z"/>
+      <path d="M2.8 6.8l.6-.6h1.3l.6.6v10.4l-.6.6H3.4l-.6-.6zM18.7 6.8l.6-.6h1.3l.6.6v10.4l-.6.6h-1.3l-.6-.6z"/>
+      <path d="M6.1 8.1l.5-.5h1.2l.5.5v7.8l-.5.5H6.6l-.5-.5zM15.7 8.1l.5-.5h1.2l.5.5v7.8l-.5.5h-1.2l-.5-.5z"/>
+    </g></symbol>
 </svg>

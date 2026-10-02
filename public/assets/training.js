@@ -44,7 +44,7 @@
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     for (const [name, value] of Object.entries({ class: 'ui-icon', viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', 'stroke-width': '1.7', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true', focusable: 'false' })) svg.setAttribute(name, value);
     const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-    use.setAttribute('href', '/assets/ui-icons.svg#' + id);
+    use.setAttribute('href', '/assets/ui-icons.svg?v=2#' + id);
     svg.append(use);
     return svg;
   };
