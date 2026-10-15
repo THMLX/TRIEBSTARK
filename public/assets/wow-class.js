@@ -30,15 +30,20 @@
     slots: ['Gear slots', 'Gear-slots'],
     showSlots: ['Show all {count} slots', 'Vis alle {count} slots'],
     slotsCount: ['{filled} of {total} items linked', '{filled} av {total} items lenket'],
-    slotEmpty: ['Not filled yet', 'Ikke fylt ut ennå'],
+    slotEmpty: ['Coming soon', 'Kommer snart'],
     itemNeedsLink: ['Item hidden until its exact Wowhead link is added.', 'Item vises når den eksakte Wowhead-lenken er lagt til.'],
     openPlanner: ['Open planner', 'Åpne planner'],
     editPlanner: ['Open saved set', 'Åpne lagret oppsett'],
     createPlanner: ['Start a set in {provider}', 'Start et oppsett i {provider}'],
-    plannerHint: ['Add the finished share link to show this planner here.', 'Legg til den ferdige delingslenken for å vise planner her.'],
+    plannerHint: ['Planner link coming soon.', 'Planner-lenke kommer snart.'],
+    comingSoon: ['Coming soon', 'Kommer snart'],
+    slotsEmpty: ['Coming soon · 0 of {total} items linked', 'Kommer snart · 0 av {total} items lenket'],
+    macroPlaceholderTitle: ['{category} macros', 'Macros for {category}'],
+    macroComingSoon: ['Coming soon. This section is ready for your macros.', 'Kommer snart. Denne delen er klar for macroene dine.'],
+
     plannerTitle: ['Interactive gear planner', 'Interaktiv gear-planner'],
     modelTitle: ['3D character preview', '3D-karaktervisning'],
-    modelHint: ['A 3D share link can be connected here when the set is ready.', 'En delingslenke til 3D-visningen kan kobles til når oppsettet er klart.'],
+    modelHint: ['3D preview coming soon.', '3D-visning kommer snart.'],
     modelOpen: ['Open 3D preview', 'Åpne 3D-visning'],
     modelFrame: ['Interactive 3D character preview', 'Interaktiv 3D-karaktervisning'],
     itemLinkLabel: ['Open {item} in the Wowhead database (opens in a new tab)', 'Åpne {item} i Wowhead-databasen (åpnes i en ny fane)'],
@@ -46,22 +51,23 @@
     situationalEyebrow: ['02 / MATCHUP NOTES', '02 / MATCHUP-NOTATER'],
     situationalTitle: ['The useful exceptions.', 'De nyttige unntakene.'],
     situationalIntro: ['Situational and niche pieces, organized by gear slot with the matchup or reason each item is worth carrying.', 'Situasjons- og niche-items, sortert etter gear-slot med matchup eller grunn til at itemet er nyttig.'],
-    situationalEmpty: ['Slot-by-slot recommendations will appear here when added.', 'Anbefalinger for hvert slot vises her når de er lagt til.'],
+    situationalEmpty: ['Slot-by-slot recommendations coming soon.', 'Anbefalinger for hvert slot kommer snart.'],
+    situationalSlotEmpty: ['Coming soon', 'Kommer snart'],
     noSituational: ['No items listed', 'Ingen items oppført'],
     consumablesEyebrow: ['03 / PREPARATION', '03 / FORBEREDELSER'],
     consumablesTitle: ['What to carry.', 'Dette bør du ha med.'],
     consumablesIntro: ['Class-specific consumables will be grouped by use and linked to their item pages.', 'Klassetilpassede forbruksvarer grupperes etter bruk og lenkes til itemsidene sine.'],
-    consumablesEmpty: ['The carry list is ready for your recommendations.', 'Listen over det du bør ha med er klar for anbefalingene dine.'],
+    consumablesEmpty: ['Consumables coming soon.', 'Forbruksvarer kommer snart.'],
     macrosEyebrow: ['04 / MACRO LIBRARY', '04 / MACRO-BIBLIOTEK'],
     macrosTitle: ['Built for your binds.', 'Tilpasset keybindsene dine.'],
-    macrosIntro: ['Filter the list by purpose. Each macro has a title, its category, and a one-click copy button.', 'Filtrer listen etter formål. Hver macro får en tittel, kategori og kopieringsknapp.'],
+    macrosIntro: ['Each category is set up and ready. Every macro will have a title, category, and one-click copy button.', 'Hver kategori er klar. Hver macro får en tittel, kategori og kopieringsknapp.'],
     filterLabel: ['Filter macros', 'Filtrer macros'],
     allMacros: ['All', 'Alle'],
     pvp: ['PvP', 'PvP'],
     class: ['Class', 'Klasse'],
     qualityOfLife: ['Quality of life', 'Quality of life'],
     niche: ['Niche', 'Niche'],
-    macroEmpty: ['The macro library is ready for your class lists.', 'Macro-biblioteket er klart for klasselistene dine.'],
+    macroEmpty: ['Macros coming soon.', 'Macros kommer snart.'],
     macroCode: ['Macro text', 'Macro-tekst'],
     copyMacro: ['Copy macro', 'Kopier macro'],
     copied: ['Macro copied.', 'Macro kopiert.'],
@@ -263,7 +269,7 @@
     const details=document.createElement('details');
     details.className='gear-slots-details';
     const summary=document.createElement('summary');
-    summary.textContent=tr('showSlots',{count:slotDefs.length})+' · '+tr('slotsCount',{filled,total:slotDefs.length});
+    summary.textContent=tr('showSlots',{count:slotDefs.length})+' · '+(filled ? tr('slotsCount',{filled,total:slotDefs.length}) : tr('slotsEmpty',{total:slotDefs.length}));
     details.append(summary);
     const slotGrid=el('div','gear-slot-grid');
     for(const [key,label] of slotDefs){
@@ -316,15 +322,16 @@
 
     const gear=versionData.situationalGear||{};
     const all=slotDefs.flatMap(([key,label])=>(Array.isArray(gear[key])?gear[key]:[]).map(item=>({key,label,item})));
-    const valid=all.filter(({item})=>item && typeof item.name==='string' && isExternalHttps(item.wowheadUrl) && new URL(item.wowheadUrl).hostname.endsWith('wowhead.com'));
-    if(!valid.length){
-      section.append(paragraph('library-empty',tr('situationalEmpty')));
-      return section;
-    }
     const groups=el('div','situational-slots');
     for(const [key,label] of slotDefs){
       const matching=all.filter(entry=>entry.key===key);
-      if(!matching.length) continue;
+      if(!matching.length){
+        const row=el('div','situational-slot situational-slot-empty');
+        row.append(el('span','gear-slot-label',label));
+        row.append(el('span','gear-item-empty',tr('situationalSlotEmpty')));
+        groups.append(row);
+        continue;
+      }
       const group=document.createElement('details');
       group.className='situational-slot';
       const sum=document.createElement('summary');
@@ -347,7 +354,11 @@
     heading.append(paragraph('',tr('consumablesIntro')));section.append(heading);
     const records=Array.isArray(versionData.consumables)?versionData.consumables:[];
     const valid=records.filter(item=>item && typeof item.name==='string' && isExternalHttps(item.wowheadUrl) && new URL(item.wowheadUrl).hostname.endsWith('wowhead.com'));
-    if(!valid.length){section.append(paragraph('library-empty',tr('consumablesEmpty')));return section;}
+    if(!valid.length){
+      const placeholder=el('article','consumable-card consumable-placeholder');
+      placeholder.append(paragraph('library-empty',tr('consumablesEmpty')));
+      section.append(placeholder);return section;
+    }
     const list=el('div','consumable-list');
     for(const item of valid){
       const card=el('article','consumable-card');
@@ -366,6 +377,7 @@
     const title=el('h2','',tr('macrosTitle'));title.id='macro-title';heading.append(title);
     heading.append(paragraph('',tr('macrosIntro')));section.append(heading);
     const categoryKeys=['all','pvp','class','qualityOfLife','niche'];
+    const categories=categoryKeys.slice(1);
     const filter=el('div','macro-filters');
     filter.setAttribute('role','group');filter.setAttribute('aria-label',tr('filterLabel'));
     for(const key of categoryKeys){
@@ -379,38 +391,52 @@
     }
     section.append(filter);
     const store=versionData.macros||{};
-    const records=categoryKeys.slice(1).flatMap(category=>(Array.isArray(store[category])?store[category]:[]).map(m=>({...m,category})));
-    const filtered=activeMacroFilter==='all'?records:records.filter(m=>m.category===activeMacroFilter);
-    if(!filtered.length){section.append(paragraph('library-empty',tr('macroEmpty')));return section;}
+    const selected=activeMacroFilter==='all'?categories:[activeMacroFilter];
     const list=el('div','macro-grid');
-    for(const macro of filtered){
-      if(!macro || typeof macro.title!=='string' || typeof macro.code!=='string') continue;
-      const card=el('article','macro-card');
-      const top=el('div','macro-card-top');
-      const info=el('div','macro-card-title');
-      info.append(el('span','macro-category',tr(macro.category==='qualityOfLife'?'qualityOfLife':macro.category)));
-      info.append(el('h3','',macro.title));
-      top.append(info);
-      const button=el('button','macro-copy-button',tr('copyMacro'));
-      button.type='button';
-      button.setAttribute('aria-label',tr('copyMacro')+': '+macro.title);
-      button.append(icon('copy'));
-      button.addEventListener('click',async()=>{
-        const status=root.querySelector('.class-library-status');
-        try{
-          if(!navigator.clipboard) throw new Error('Clipboard unavailable');
-          await navigator.clipboard.writeText(macro.code);
-          status.textContent=tr('copied');button.textContent=tr('copied');button.append(icon('copy'));
-        }catch{
-          status.textContent=tr('copyFailed');
-        }
-        setTimeout(()=>{button.textContent=tr('copyMacro');button.append(icon('copy'));},1800);
-      });
-      top.append(button);card.append(top);
-      const code=document.createElement('pre');code.className='macro-code';code.setAttribute('aria-label',tr('macroCode'));code.tabIndex=0;
-      const codeNode=document.createElement('code');codeNode.textContent=macro.code;code.append(codeNode);card.append(code);
-      if(macro.notes) card.append(paragraph('macro-note',macro.notes));
-      list.append(card);
+    for(const category of selected){
+      const records=(Array.isArray(store[category])?store[category]:[])
+        .filter(m=>m && typeof m.title==='string' && m.title.trim() && typeof m.code==='string' && m.code.trim())
+        .map(m=>({...m,category}));
+      if(!records.length){
+        const card=el('article','macro-card macro-placeholder-card');
+        const top=el('div','macro-card-top');
+        const info=el('div','macro-card-title');
+        const categoryLabel=tr(category==='qualityOfLife'?'qualityOfLife':category);
+        info.append(el('span','macro-category',categoryLabel));
+        info.append(el('h3','',tr('macroPlaceholderTitle',{category:categoryLabel})));
+        top.append(info);card.append(top);
+        card.append(paragraph('macro-placeholder',tr('macroComingSoon')));
+        list.append(card);
+        continue;
+      }
+      for(const macro of records){
+        const card=el('article','macro-card');
+        const top=el('div','macro-card-top');
+        const info=el('div','macro-card-title');
+        info.append(el('span','macro-category',tr(macro.category==='qualityOfLife'?'qualityOfLife':macro.category)));
+        info.append(el('h3','',macro.title));
+        top.append(info);
+        const button=el('button','macro-copy-button',tr('copyMacro'));
+        button.type='button';
+        button.setAttribute('aria-label',tr('copyMacro')+': '+macro.title);
+        button.append(icon('copy'));
+        button.addEventListener('click',async()=>{
+          const status=root.querySelector('.class-library-status');
+          try{
+            if(!navigator.clipboard) throw new Error('Clipboard unavailable');
+            await navigator.clipboard.writeText(macro.code);
+            status.textContent=tr('copied');button.textContent=tr('copied');button.append(icon('copy'));
+          }catch{
+            status.textContent=tr('copyFailed');
+          }
+          setTimeout(()=>{button.textContent=tr('copyMacro');button.append(icon('copy'));},1800);
+        });
+        top.append(button);card.append(top);
+        const code=document.createElement('pre');code.className='macro-code';code.setAttribute('aria-label',tr('macroCode'));code.tabIndex=0;
+        const codeNode=document.createElement('code');codeNode.textContent=macro.code;code.append(codeNode);card.append(code);
+        if(macro.notes) card.append(paragraph('macro-note',macro.notes));
+        list.append(card);
+      }
     }
     section.append(list);return section;
   }

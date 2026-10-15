@@ -79,3 +79,10 @@
 @media(max-width:700px){.wow-class-hero{padding-block:35px 40px}.wow-class-title{font-size:clamp(48px,11vw,72px)}.wow-class-lead{font-size:21px}.class-page-jump{gap:3px 16px}.class-page-jump>span{flex-basis:100%;margin-top:4px}.class-page-controls{padding-top:30px}.library-section{padding-top:58px}.library-section-heading{grid-template-columns:1fr;gap:14px;margin-bottom:26px}.library-section-heading h2{font-size:43px}.plan-card{padding:19px}.gear-slot-grid,.situational-slots{grid-template-columns:1fr}.consumable-list,.macro-grid{grid-template-columns:1fr}.planner-frame{height:470px}.model-frame{height:400px}}
 @media(max-width:420px){.wow-class-title{font-size:46px}.class-switch{gap:6px}.class-switch a{padding-inline:11px;min-height:40px;font-size:11px}.version-button{padding-inline:14px}.library-section-heading h2{font-size:39px}.plan-card{padding:15px}.planner-panel,.model-panel{padding:14px}.macro-card{padding:16px}.macro-card-top{gap:10px}.macro-card h3{font-size:20px}.macro-copy-button{padding-inline:10px;font-size:10px}.gear-slot-label{flex-basis:75px}.planner-frame{height:430px}}
 @media(prefers-reduced-motion:reduce){.wow-class-page *{scroll-behavior:auto;transition-duration:.01ms!important}}
+
+.situational-slot-empty{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding-block:9px}
+.situational-slot-empty .gear-slot-label{flex:0 0 90px}
+.macro-placeholder-card .macro-card-top{margin-bottom:8px}
+.macro-placeholder{margin:0;color:#b8bbc2;font-size:12px;line-height:1.7}
+.consumable-placeholder{grid-column:1/-1}
+.consumable-placeholder .library-empty{margin:0}
