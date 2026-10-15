@@ -126,7 +126,7 @@
   ];
   const classNames = ['hunter','warrior','rogue','druid'];
   let library = null;
-  let activeVersion = new URLSearchParams(location.search).get('version') === 'forever' ? 'forever' : 'classic';
+  let activeVersion = new URLSearchParams(location.search).get('version') === 'classic' ? 'classic' : 'forever';
   let activeMacroFilter = 'all';
 
   function paragraph(cls, value) { return el('p', cls, value); }
@@ -179,7 +179,7 @@
     const versionGroup=el('div','version-switch');
     versionGroup.setAttribute('role','group');
     versionGroup.setAttribute('aria-label',tr('versionLabel'));
-    for(const version of ['classic','forever']){
+    for(const version of ['forever','classic']){
       const button=el('button','version-button',tr(version));
       button.type='button';
       button.dataset.version=version;
