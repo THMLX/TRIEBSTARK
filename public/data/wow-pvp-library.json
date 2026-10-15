@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "itemLinkPolicy": "Every visible gear, situational, and consumable item must include an exact HTTPS Wowhead item-page URL in wowheadUrl. Entries without a valid Wowhead item URL are not displayed as linked items.",
+  "equipmentSlots": [
+    {
+      "key": "head",
+      "label": "Head"
+    },
+    {
+      "key": "neck",
+      "label": "Neck"
+    },
+    {
+      "key": "shoulders",
+      "label": "Shoulders"
+    },
+    {
+      "key": "back",
+      "label": "Back"
+    },
+    {
+      "key": "chest",
+      "label": "Chest"
+    },
+    {
+      "key": "shirt",
+      "label": "Shirt"
+    },
+    {
+      "key": "tabard",
+      "label": "Tabard"
+    },
+    {
+      "key": "wrists",
+      "label": "Wrists"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "waist",
+      "label": "Waist"
+    },
+    {
+      "key": "legs",
+      "label": "Legs"
+    },
+    {
+      "key": "feet",
+      "label": "Feet"
+    },
+    {
+      "key": "finger1",
+      "label": "Ring 1"
+    },
+    {
+      "key": "finger2",
+      "label": "Ring 2"
+    },
+    {
+      "key": "trinket1",
+      "label": "Trinket 1"
+    },
+    {
+      "key": "trinket2",
+      "label": "Trinket 2"
+    },
+    {
+      "key": "mainHand",
+      "label": "Main hand"
+    },
+    {
+      "key": "offHand",
+      "label": "Off hand"
+    },
+    {
+      "key": "ranged",
+      "label": "Ranged"
+    }
+  ],
+  "classes": {
+    "hunter": {
+      "name": "Hunter",
+      "slug": "hunter",
+      "style": {
+        "en": "Ranged pressure, control, and careful space management.",
+        "nb": "Press på avstand, kontroll og god håndtering av avstand."
+      },
+      "versions": {
+        "classic": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        },
+        "forever": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        }
+      }
+    },
+    "warrior": {
+      "name": "Warrior",
+      "slug": "warrior",
+      "style": {
+        "en": "Melee pressure, timing, and choosing when to commit.",
+        "nb": "Nærkamp, press, timing og valget om når du skal gå inn."
+      },
+      "versions": {
+        "classic": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        },
+        "forever": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        }
+      }
+    },
+    "rogue": {
+      "name": "Rogue",
+      "slug": "rogue",
+      "style": {
+        "en": "Openings, control, and deciding when to reset.",
+        "nb": "Åpninger, kontroll og vurderingen av når du bør resette."
+      },
+      "versions": {
+        "classic": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        },
+        "forever": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        }
+      }
+    },
+    "druid": {
+      "name": "Druid",
+      "slug": "druid",
+      "style": {
+        "en": "Adaptability, space, and keeping more than one option open.",
+        "nb": "Tilpasning, avstand og det å holde flere muligheter åpne."
+      },
+      "versions": {
+        "classic": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        },
+        "forever": {
+          "sets": {
+            "openWorld": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            },
+            "battleground": {
+              "plannerUrl": "",
+              "modelUrl": "",
+              "items": {}
+            }
+          },
+          "situationalGear": {
+            "head": [],
+            "neck": [],
+            "shoulders": [],
+            "back": [],
+            "chest": [],
+            "shirt": [],
+            "tabard": [],
+            "wrists": [],
+            "hands": [],
+            "waist": [],
+            "legs": [],
+            "feet": [],
+            "finger1": [],
+            "finger2": [],
+            "trinket1": [],
+            "trinket2": [],
+            "mainHand": [],
+            "offHand": [],
+            "ranged": []
+          },
+          "consumables": [],
+          "macros": {
+            "pvp": [],
+            "class": [],
+            "qualityOfLife": [],
+            "niche": []
+          }
+        }
+      }
+    }
+  },
+  "versions": {
+    "classic": {
+      "label": "Classic",
+      "provider": "Wowhead Classic Gear Planner",
+      "plannerStartUrl": "https://www.wowhead.com/classic/gear-planner"
+    },
+    "forever": {
+      "label": "Forever",
+      "provider": "Sixty Upgrades Forever",
+      "plannerStartUrl": "https://sixtyupgrades.com/forever/"
+    }
+  },
+  "setTypes": {
+    "openWorld": {
+      "label": "Open-world PvP",
+      "description": "Best-in-slot set for roaming and open-world fights."
+    },
+    "battleground": {
+      "label": "Battlegrounds",
+      "description": "Best-in-slot set for battleground matches."
+    }
+  },
+  "macroCategories": [
+    "pvp",
+    "class",
+    "qualityOfLife",
+    "niche"
+  ]
+}

@@ -415,7 +415,16 @@
   "{label} username copied.": "Brukernavnet på {label} er kopiert.",
   "Site link copied.": "Lenken til nettsiden er kopiert.",
   "{label}: {value}": "{label}: {value}",
-  "Site address: {value}": "Nettadresse: {value}"
+  "Site address: {value}": "Nettadresse: {value}",
+  "Open class page": "Åpne klasseside",
+  "Open Hunter PvP class page": "Åpne PvP-klassesiden for Hunter",
+  "Open Warrior PvP class page": "Åpne PvP-klassesiden for Warrior",
+  "Open Rogue PvP class page": "Åpne PvP-klassesiden for Rogue",
+  "Open Druid PvP class page": "Åpne PvP-klassesiden for Druid",
+  "Follow Thomalex on Twitch (opens in a new tab)": "Følg Thomalex på Twitch (åpnes i en ny fane)",
+  "ON TWITCH": "PÅ TWITCH",
+  "Follow the channel for streams and updates.": "Følg kanalen for strømminger og oppdateringer.",
+  "Loading the class playbook…": "Laster klassespillboken …",
 };
   const storageKey = 'triebstark-language';
   let language = 'en';
