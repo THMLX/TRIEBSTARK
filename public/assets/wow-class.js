@@ -10,7 +10,7 @@
     back: ['Gaming overview', 'Gamingoversikt'],
     eyebrow: ['WORLD OF WARCRAFT / PVP REFERENCE', 'WORLD OF WARCRAFT / PVP-REFERANSE'],
     titleTail: ['PvP playbook', 'PvP-spillbok'],
-    intro: ['A class-by-class reference for Classic and Forever. Gear and macros will be added as Thomalex’s lists are ready.', 'En klassevis referanse for Classic og Forever. Gear og macros legges til når Thomalex sine lister er klare.'],
+    intro: ['A class-by-class reference for Classic ERA and Forever. Gear and macros will be added as Thomalex’s lists are ready.', 'En klassevis referanse for Classic ERA og Forever. Gear og macros legges til når Thomalex sine lister er klare.'],
     classNav: ['Explore classes', 'Utforsk klasser'],
     onPage: ['ON THIS PAGE', 'PÅ DENNE SIDEN'],
     jumpGear: ['Gear plans', 'Gear-oppsett'],
@@ -18,7 +18,7 @@
     jumpConsumables: ['Consumables', 'Forbruksvarer'],
     jumpMacros: ['Macros', 'Macros'],
     versionLabel: ['Choose game version', 'Velg spillversjon'],
-    classic: ['Classic', 'Classic'],
+    classic: ['Classic ERA', 'Classic ERA'],
     forever: ['Forever', 'Forever'],
     buildEyebrow: ['01 / BEST-IN-SLOT PLANS', '01 / BEST-IN-SLOT-OPPSETT'],
     buildTitle: ['Build the set around the fight.', 'Bygg oppsettet etter kampen.'],
@@ -467,9 +467,9 @@
     if(!library || !library.classes[classKey]) return;
     document.documentElement.lang=window.siteI18n?.lang==='nb'?'nb':'en';
     const className=library.classes[classKey].name;
-    document.title=window.siteI18n?.lang==='nb'?className+' PvP — WoW Classic og Forever — Thomalex / TRIEBSTARK':className+' PvP — WoW Classic & Forever — Thomalex / TRIEBSTARK';
+    document.title=window.siteI18n?.lang==='nb'?className+' PvP — WoW Classic ERA og Forever — Thomalex / TRIEBSTARK':className+' PvP — WoW Classic & Forever — Thomalex / TRIEBSTARK';
     const description=document.querySelector('meta[name="description"]');
-    if(description) description.content=window.siteI18n?.lang==='nb'?className+' PvP for Classic og Forever: gear-oppsett, situasjonsutstyr, forbruksvarer, macros og 3D-visninger.':className+' PvP for Classic and Forever: gear plans, situational items, consumables, macros, and 3D previews.';
+    if(description) description.content=window.siteI18n?.lang==='nb'?className+' PvP for Classic ERA og Forever: gear-oppsett, situasjonsutstyr, forbruksvarer, macros og 3D-visninger.':className+' PvP for Classic ERA and Forever: gear plans, situational items, consumables, macros, and 3D previews.';
     createRoot();
   }
 

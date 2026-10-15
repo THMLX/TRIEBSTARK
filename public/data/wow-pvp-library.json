@@ -459,8 +459,8 @@
   },
   "versions": {
     "classic": {
-      "label": "Classic",
-      "provider": "Wowhead Classic Gear Planner",
+      "label": "Classic ERA",
+      "provider": "Wowhead Classic ERA Gear Planner",
       "plannerStartUrl": "https://www.wowhead.com/classic/gear-planner"
     },
     "forever": {
