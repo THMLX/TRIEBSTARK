@@ -67,7 +67,12 @@ a.social-icon:focus-visible{outline-offset:3px}
 @media(min-width:781px) and (max-width:1100px){.navigation{gap:16px}.nav-external{margin-left:0}}
 
 /* Compact, persistent language choice next to the theme control. */
-.language-toggle{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;min-width:44px;min-height:44px;padding:10px 8px;border:1px solid var(--line);border-radius:24px;background:transparent;font-size:11px;line-height:1;font-weight:600;letter-spacing:.04em}
+.language-toggle{
+  display:inline-flex;align-items:center;justify-content:center;gap:5px;flex-shrink:0;
+  min-width:56px;min-height:44px;padding:10px 7px;border:1px solid var(--line);
+  border-radius:24px;background:transparent;font-size:11px;line-height:1;font-weight:600;letter-spacing:.04em;
+}
+.language-toggle .language-icon{width:16px;height:16px;flex-shrink:0}
 .language-toggle[hidden]{display:none}.language-toggle:hover{background:var(--hover)}
 .site-header{column-gap:14px}.site-header .theme-toggle{margin-left:4px}.site-header .wordmark{flex-shrink:0}
 @media(max-width:1100px){.site-header .theme-label{display:none}}
@@ -84,8 +89,9 @@ a.social-icon:focus-visible{outline-offset:3px}
   html:not(.js) .site-header .navigation{display:flex;position:static;flex-wrap:wrap;flex-direction:row;box-shadow:none;padding:0;border:0;gap:14px}
   html:not(.js) .site-header .navigation a{font-size:12px;padding:0}
 }
-@media(max-width:460px){.site-header{gap:7px}.site-header .theme-toggle,.language-toggle{min-width:40px;min-height:44px;padding:9px}.site-header .menu-toggle{font-size:0;min-width:30px;padding:9px 0;justify-content:center;gap:0}}
+@media(max-width:460px){.site-header{gap:7px}.site-header .theme-toggle{min-width:40px;min-height:44px;padding:9px}.site-header .menu-toggle{font-size:0;min-width:30px;padding:9px 0;justify-content:center;gap:0}}
 @media(max-width:360px){.site-header .wordmark{font-size:17px;gap:5px}.site-header .brand-mark{font-size:23px;margin-right:0}.site-header{gap:5px}}
+@media(max-width:340px){.site-header.wrap{width:calc(100% - 20px)}}
 
 /* Local vector icons keep controls consistent across browser fonts and themes. */
 .ui-icon{display:inline-block;width:1em;height:1em;vertical-align:-.14em;flex-shrink:0}

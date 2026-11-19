@@ -457,6 +457,8 @@
     }
   });
   const button = document.querySelector('.language-toggle');
+  const languageIcon = button?.querySelector('use');
+  const languageCode = button?.querySelector('.language-code');
   function apply() {
     document.documentElement.lang = language;
     for (const { node, original, key } of textRecords) {
@@ -466,12 +468,14 @@
     for (const { element, name, original } of attributeRecords) {
       if (element.isConnected && !element.closest(excluded)) element.setAttribute(name, t(original));
     }
-    if (button) {
-      button.textContent = language === 'nb' ? 'NO' : 'EN';
-      const label = language === 'nb' ? 'Språk: norsk bokmål. Bytt til engelsk.' : 'Language: English. Switch to Norwegian.';
+    if (button && languageIcon && languageCode) {
+      const switchToEnglish = language === 'nb';
+      const icon = switchToEnglish ? 'language-globe' : 'language-norway';
+      const label = switchToEnglish ? 'EN – Bytt til engelsk' : 'NO – Switch to Norwegian (Bokmål)';
+      languageIcon.setAttribute('href', `/assets/ui-icons.svg?v=3#${icon}`);
+      languageCode.textContent = switchToEnglish ? 'EN' : 'NO';
       button.setAttribute('aria-label', label);
-      button.setAttribute('aria-pressed', String(language === 'nb'));
-      button.title = language === 'nb' ? 'Norsk bokmål / English' : 'English / Norsk bokmål';
+      button.title = label;
       button.hidden = false;
     }
   }
